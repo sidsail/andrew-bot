@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-const tokens = require('./tokens.js')
-const token = tokens.botToken
+const config = require('./config.js')
+const token = config.token
 
 const userSchema = require("./schemas/user_schema")
 

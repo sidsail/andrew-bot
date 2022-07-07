@@ -1,8 +1,12 @@
 //const { Message } = require('discord.js');
 const mongoose = require('mongoose');
 //const { findById } = require('../schemas/test_schema.js');
-const tokens = require('../tokens.js')
-const dbURI = tokens.dbURI
+//const tokens = require('../tokens.js')
+//const dbURI = tokens.dbURI
+
+const config = require('../config.js')
+const dbURI = config.dbURI
+
 const test_user = require('../schemas/test_schema.js');
 const userSchema = require('../schemas/user_schema');
 const marketInfo = require('../schemas/market_info');
